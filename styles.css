@@ -1,15 +1,22 @@
-/* Basic Reset */
-* {
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
 }
 
 .container {
@@ -18,108 +25,74 @@ body {
     overflow: hidden;
 }
 
-/* Header */
-header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77b3d4 3px solid;
-}
-
-header h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-header p {
-    text-align: center;
-    font-size: 18px;
-}
-
-/* Navigation */
-nav {
-    background: #77b3d4;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-/* Main Section */
-main {
+section {
     padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
 }
 
-main h2 {
-    border-bottom: #77b3d4 2px solid;
+section h2 {
+    text-align: center;
+    margin: 0;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
 }
 
-main p {
-    margin-bottom: 10px;
+.education-entry, .research-entry, .activity {
+    margin: 20px 0;
 }
 
-/* Footer */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
 }
 
-footer a {
-    color: #77b3d4;
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #0056b3;
     text-decoration: none;
 }
 
-/* Grid Layout */
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+}
+/* Add this to styles.css */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-/* Animations */
-header, nav, footer {
+header {
     animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Additional styling for whitespace */
 section {
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 1s;
 }
 
-/* Typography */
-h1, h2 {
-    font-family: 'Helvetica Neue', sans-serif;
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+    }
 }
 
-p {
-    font-family: 'Georgia', serif;
-}
