@@ -3,115 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bikram Pal - Portfolio</title>
+    <title>Bikram Pal | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Bikram Pal</h1>
-            <p>BS-MS Dual Degree Student | IISER Kolkata</p>
-        </div>
-    </header>
-    
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>D-207 Nivedita Hall, IISER Kolkata – Mohanpur, WB, 741246</p>
-            <p>Phone: +91 8001413516 | Email: bp23ms109@iiserkol.ac.in</p>
-            <p><a href="https://bikuiiserk.github.io/website/">Personal Website</a> | <a href="https://www.linkedin.com/in/bikram-pal-iiserkolkata23ms">LinkedIn</a></p>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</            <div class="education-entry">
-                <h3>Indian Institute of Science Education and Research (IISER), Kolkata</h3>
-                <p>BS-MS Dual Degree (Sophomore Status), 2023–present</p>
-                <p>Grade - A+ | CGPA: 9.63</p>
-            </div>
-                <h3>Birbhum Zilla School</h3>
-                <p>Higher Secondary School, 2021–2023</p>
-                <p>Grade - A+ | Percentage - 96.8</p>
-             </div>
-                <h3>BkTPP Prabir Sengupta Vidyalaya</h3>
-                <p>Secondary School, 2015–2021</p>
-                <p>Grade - A+ | Percentage - 95.29</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="research">
-        <div class="container">
-            <h2>Research Experience</h2>
-            <div class="research-entry">
-                <h3>Summer Intern, Tata Institute of Fundamental Research (TIFR)</h3>
-                <p>June 2024</p>
-                <p>Attended NIUS Physics 2024 summer camp</p>
-            </div>
-            <div class="research-entry">
-                <h3>Project Student, IISER Kolkata</h3>
-                <p>Jan 2024 - Jun 2024</p>
-                <p>Supervisor: Dr. Soumitro Banerjee</p>
-                <p>Exploring chaotic phenomena, bifurcation theory, and nonlinear differential equations</p>
-            </div>
-            <div class="research-entry">
-                <h3>Project Student, IISER Bhopal</h3>
-                <p>May 2024 - Jul 2024</p>
-                <p>Supervisor: Dr. Arnab Rudra</p>
-                <p>In Quantum Mechanics, delving into the intricacies of particle behavior and wave functions.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="achievements">
-        <div class="container">
-            <h2>Achievements</h2>
+        <nav>
             <ul>
-                <li>DST-INSPIRE Scholar, 2023-Present</li>
-                <li>WBCHSE Rank 13, 2023</li>
-                <li>Exams Cleared: JEE, NEST, CUET, IAT, 2023</li>
-                <li>Achievement in Diagnostic Test in Mathematics (ADTM) Rank 15, 2018</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section home">
+            <h1>Bikram Pal</h1>
+            <p>Welcome to my portfolio website. Explore to learn more about my journey and interests.</p>
+        </section>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p>Indian Institute of Science Education and Research (IISER), Kolkata</p>
+            <p>BS-MS Dual Degree, 2023-present</p>
+            <p>CGPA: 9.63</p>
+            <p>Here's an example of a quadratic equation:</p>
+            <div class="equation">
+                $$ax^2 + bx + c = 0$$
+            </div>
+        </section>
+        <section id="research" class="section">
+            <h2>Research</h2>
+            <p>Research Intern, IIT Kharagpur</p>
+            <p>Project: Computational Stochastic Process</p>
+            <div class="equation">
+                <p>Stochastic Process: </p>
+                <div>$$X_t = X_0 + \int_0^t \mu(s, X_s) \, ds + \int_0^t \sigma(s, X_s) \, dW_s$$</div>
+            </div>
+            <p>Exploring Chaos: The Lorenz Equations:</p>
+            <div class="equation">
+                $$\frac{dx}{dt} = \sigma (y - x)$$
+                $$\frac{dy}{dt} = x (\rho - z) - y$$
+                $$\frac{dz}{dt} = xy - \beta z$$
+            </div>
+        </section>
+        <section id="skills" class="section">
             <h2>Skills</h2>
             <ul>
-                <li>MS Office: Word, Excel, PowerPoint</li>
-                <li>Programming: Python</li>
-                <li>Software: Matlab, LATEX, Origin, Gaussian</li>
-                <li>Languages: Bengali, English, Hindi, Sanskrit</li>
+                <li>Programming: Python, R</li>
+                <li>Software: Matlab, LATEX, Gaussian</li>
+                <li>Languages: Bengali, English, Hindi</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="activities">
-        <div class="container">
-            <h2>Student Activities</h2>
-            <div class="activity">
-                <h3>Cricket</h3>
-                <p>Won the IISER Kolkata Premier League 2024 organised by IKCC</p>
+        </section>
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <p>DST-INSPIRE Scholar, 2023-Present</p>
+            <p>Top 1% in Class XII, WBCHSE Rank 13, 2023</p>
+            <p>Probability Theory Achievement:</p>
+            <div class="equation">
+                $$P(A \cap B) = P(A)P(B|A)$$
             </div>
-            <div class="activity">
-                <h3>Debate</h3>
-                <p>Two time Winner of Debate competition organised by West Bengal Election commission of India (2022, 2023)</p>
-                <p>Winner of Debate competition organised by West Bengal Co-operative Society 2022</p>
-            </div>
-            <div class="activity">
-                <h3>Science Fair</h3>
-                <p>Participated in State Level Science Model Competition, 2018</p>
-            </div>
-        </div>
-    </section>
-
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bp23ms109@iiserkol.ac.in">bp23ms109@iiserkol.ac.in</a></p>
+            <p>Phone: +91 8001413516</p>
+        </section>
+    </main>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Bikram Pal. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Bikram Pal</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
